@@ -11,6 +11,7 @@ public class ShapeListServer {
             System.out.println("ShapeList server ready");
         }catch(Exception e) {
             System.out.println("ShapeList server main " + e.getMessage());
+            e.printStackTrace();
         }
     }
 }
