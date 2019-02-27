@@ -1,4 +1,5 @@
 package examples.RMIShape;
+import java.rmi.RemoteException;
 import java.util.Vector;
 public class ShapeListServant implements ShapeList{
     private Vector theList;
@@ -9,7 +10,7 @@ public class ShapeListServant implements ShapeList{
         version = 0;
     }
 
-  	public Shape newShape(GraphicalObject g) throws RemoteException{
+  	public Shape newShape(GraphicalObject g) throws RemoteException {
   	    version++;
        	Shape s = new ShapeServant( g, version);
         theList.addElement(s);                
