@@ -1,0 +1,8 @@
+// The security policy file for server program.
+// The following instructions allow the program to access anything.
+// Change the path to your source floder.
+// Run your server program with this file as a parameter.
+
+grant codeBase "file:/home/ann/src/" {
+    permission java.security.AllPermission;
+};
