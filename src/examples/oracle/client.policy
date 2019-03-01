@@ -1,0 +1,8 @@
+// The security policy file for client program.
+// The following instructions allow the program to access anything.
+// Change the path to your source folder.
+// Run your client program with this file as a parameter.
+
+grant codeBase "file:/home/jones/src/" {
+    permission java.security.AllPermission;
+};
